@@ -58,16 +58,27 @@ El proyecto simula un sitio informativo real que incluye descripción de la band
 
 ## 📂 Estructura del Proyecto
 metallica-web/
+
 │
+
 ├── index.html
+
 ├── conciertos.html
+
 │
+
 ├── css/
+
 │ └── styles.css
+
 │
+
 ├── img/
+
 │ └── grupo.jpeg
+
 │
+
 └── README.md
 
 ---
