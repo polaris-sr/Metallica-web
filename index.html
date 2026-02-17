@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Metallica | Proyecto web básico</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <h1>Metallica</h1>
+  </header>
+
+  <!-- Sección principal -->
+  <section class="grupo">
+
+    <img src="img/grupo.jpeg" alt="Foto del grupo Metallica" />
+
+    <p>
+      Metallica es una banda estadounidense de heavy metal fundada en 1981.
+      Este proyecto es una web informativa sencilla desarrollada con HTML,
+      CSS y JavaScript básico, pensada como ejemplo de estructura y
+      funcionalidad en desarrollo web.
+    </p>
+
+    <!-- Botón con JavaScript -->
+    <button id="btnInfo">Mostrar más información</button>
+
+    <!-- Contenido oculto -->
+    <p id="infoExtra" style="display: none;">
+      El objetivo del proyecto es practicar estructura semántica,
+      estilos básicos y pequeñas interacciones con JavaScript.
+      
+    </p>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p><a href="conciertos.html">Ver fechas de conciertos</a></p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Espero a que cargue todo el HTML
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const boton = document.getElementById("btnInfo");
+      const info = document.getElementById("infoExtra");
+      let visible = false;
+
+      boton.addEventListener("click", function () {
+
+        if (visible) {
+          info.style.display = "none";
+          boton.textContent = "Mostrar más información";
+          visible = false;
+        } else {
+          info.style.display = "block";
+          boton.textContent = "Ocultar información";
+          visible = true;
+        }
+
+      });
+
+    });
+  </script>
+
+</body>
+</html>

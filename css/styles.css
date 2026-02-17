@@ -1,0 +1,108 @@
+/* ----------------------------
+   Estilo general
+   ----------------------------
+   Defino el fondo de toda la página y la tipografía general.
+   Fondo claro porque lo pide la PAC.
+---------------------------- */
+body {
+    font-family: Calibri, sans-serif; /* Texto normal de la página */
+    background-color: #f5f5f5;        /* Fondo suave y claro */
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------------------------
+   Encabezados
+   ----------------------------
+   Uso Verdana para h1 y h2, como pide la PAC.
+   También los centro y les pongo un color oscuro para que se vean bien.
+---------------------------- */
+h1, h2 {
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    color: #222;
+}
+
+/* ----------------------------
+   Secciones
+   ----------------------------
+   Las secciones tienen fondo blanco y bordes redondeados.
+   Ajusto el padding y margen para que no se pegue a los bordes.
+   Pongo una sombra ligera para que se vea más bonito.
+---------------------------- */
+section {
+    background-color: #ffffff;  
+    border-radius: 12px;        
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra ligera */
+}
+
+/* ----------------------------
+   Imagen del grupo
+   ----------------------------
+   Centrada y con tamaño máximo 400px, como pide la PAC.
+   Le pongo bordes redondeados para que sea mejor visualmente
+---------------------------- */
+section.grupo img {
+    display: block;
+    margin: 0 auto;   
+    max-width: 400px;
+    border-radius: 12px;
+}
+
+/* ----------------------------
+   Tablas de conciertos
+   ----------------------------
+   La tabla ocupa todo el ancho, con bordes y padding.
+   Alterno colores de filas para que se lea mejor.
+---------------------------- */
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Encabezado de la tabla */
+th {
+    background-color: #333;
+    color: white;
+}
+
+/* Alternar colores de filas para facilitar la lectura */
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e6f0f7; /* azul clarito */
+}
+
+/* ----------------------------
+   Enlaces
+   ----------------------------
+   Color azul para los enlaces.
+   Subrayado solo cuando paso el mouse.
+---------------------------- */
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+/* ----------------------------
+   Footer
+   ----------------------------
+   Centrado y con un poco de espacio arriba y abajo.
+---------------------------- */
+footer {
+    text-align: center;
+    margin: 20px 0;
+}

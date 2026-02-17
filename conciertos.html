@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Conciertos de Metallica</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <h1>Próximos conciertos de Metallica</h1>
+  </header>
+
+  <section class="tabla-conciertos">
+
+    <!-- Botón con JS -->
+    <button id="btnConciertos">Ocultar conciertos</button>
+
+    <!-- Contenedor de la tabla -->
+    <div id="contenedorTabla">
+
+      <table>
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Lugar</th>
+            <th>Hora</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10 de abril 2026</td>
+            <td>Madrid - WiZink Center</td>
+            <td>20:30</td>
+            <td>75€</td>
+          </tr>
+          <tr>
+            <td>15 de abril 2026</td>
+            <td>Barcelona - Palau Sant Jordi</td>
+            <td>21:00</td>
+            <td>80€</td>
+          </tr>
+          <tr>
+            <td>20 de abril 2026</td>
+            <td>Valencia - Ciutat de les Arts</td>
+            <td>20:00</td>
+            <td>70€</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p><a href="index.html">Volver a la página principal</a></p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Código JavaScript sencillo para interacción básica
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const boton = document.getElementById("btnConciertos");
+      const tabla = document.getElementById("contenedorTabla");
+      let visible = true;
+
+      boton.addEventListener("click", function () {
+
+        if (visible) {
+          tabla.style.display = "none";
+          boton.textContent = "Mostrar conciertos";
+          visible = false;
+        } else {
+          tabla.style.display = "block";
+          boton.textContent = "Ocultar conciertos";
+          visible = true;
+        }
+
+      });
+
+    });
+  </script>
+
+</body>
+</html>
